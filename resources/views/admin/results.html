@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats et Statistiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/results.js"></script>
+</head>
+<body>
+    <header class="p-4 flex justify-between items-center bg-white">
+        <img src="cropped-logo-ERASMUS-fr.png" alt="Erasmus+ Logo" class="logo">
+        <img src="eu_funded_en.png" alt="EU Funded Logo" class="logo">
+    </header>
+    <div class="container mx-auto mt-10 text-center">
+        <div class="card mx-auto" style="max-width: 800px;">
+            <h1 class="text-2xl font-bold mb-5">Sélectionnez une Université</h1>
+            <div class="mb-8">
+                <select id="universitySelect" class="p-2 border rounded">
+                    <!-- Les options seront ajoutées dynamiquement par JavaScript -->
+                </select>
+            </div>
+            <div id="universityDetails" class="mt-5">
+                <h2 class="text-2xl font-bold mb-4" id="universityName"></h2>
+                <button class="btn" id="showResults">Voir les détails</button>
+                
+                <button class="btn" id="showProfile">Télecharger la Fiche Institutionnelle</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
